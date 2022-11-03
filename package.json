@@ -1,0 +1,23 @@
+{
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "JavaScript first project: Brain Games",
+  "main": "bin/brain-games.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deus-ex-m/frontend-project-44.git"
+  },
+  "keywords": [
+    "hexlet"
+  ],
+  "author": "Artem Terenin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deus-ex-m/frontend-project-44/issues"
+  },
+  "homepage": "https://github.com/deus-ex-m/frontend-project-44#readme"
+}
