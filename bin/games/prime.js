@@ -8,7 +8,7 @@ const prime = () => {
   const currentNumber = random(1, 100);
   let answer = 'yes';
 
-  for (let i = 2; i < Math.ceil(currentNumber / 2); i += 1) {
+  for (let i = 2; i <= Math.ceil(currentNumber / 2); i += 1) {
     if (currentNumber % i === 0) {
       answer = 'no';
       break;
