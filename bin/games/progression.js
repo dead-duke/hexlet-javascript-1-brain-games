@@ -23,7 +23,7 @@ const progression = () => {
     }
   }
 
-  console.log('Question: ', ...progressionList);
+  console.log('Question:', ...progressionList);
   const userAnswer = readlineSync.question('Your answer: ');
   return [answer, userAnswer];
 };
