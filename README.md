@@ -8,3 +8,5 @@
 [![asciicast](https://asciinema.org/a/zfaF5f6JC22Ywr0EQBpSs28xg.svg)](https://asciinema.org/a/zfaF5f6JC22Ywr0EQBpSs28xg)
 ### brain-gcd test:
 [![asciicast](https://asciinema.org/a/oW1VS2mBKoSd1UQvi7Y0hyqjl.svg)](https://asciinema.org/a/oW1VS2mBKoSd1UQvi7Y0hyqjl)
+### brain-progression test:
+[![asciicast](https://asciinema.org/a/ZLMI7pkVhhjpR3ShAmCWyVdZk.svg)](https://asciinema.org/a/ZLMI7pkVhhjpR3ShAmCWyVdZk)
