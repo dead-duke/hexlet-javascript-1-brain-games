@@ -1,11 +1,10 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
-import gameSession from '../index.js';
-import random from '../random.js';
+import random from '../src/random.js';
 
 console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
 
-const brainPrime = () => {
+const prime = () => {
   const currentNumber = random(1, 100);
   let answer = 'yes';
 
@@ -21,4 +20,4 @@ const brainPrime = () => {
   return [answer, userAnswer];
 };
 
-gameSession(brainPrime);
+export default prime;

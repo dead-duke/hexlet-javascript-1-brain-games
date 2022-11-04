@@ -1,7 +1,4 @@
 #!/usr/bin/env node
-import answerUserName from './cli.js';
+import answerUserName from './src/cli.js';
 
-console.log('Welcome to the Brain Games');
-const userName = answerUserName();
-
-export default userName;
+answerUserName();

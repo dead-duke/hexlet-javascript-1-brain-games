@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
-import gameSession from '../index.js';
-import random from '../random.js';
+import random from '../src/random.js';
 
 console.log('Find the greatest common divisor of given numbers.');
 
@@ -30,14 +29,14 @@ const getMaxDivider = (firstValue, secondValue) => {
   return maxDiveder;
 };
 
-const brainGCD = () => {
+const gcd = () => {
   const firstValue = random(1, 100);
   const secondValue = random(1, 100);
 
-  const answer = getMaxDivider(firstValue, secondValue);
+  const answer = String(getMaxDivider(firstValue, secondValue));
   console.log(`Question: ${firstValue} ${secondValue}`);
-  const userAnswer = Number(readlineSync.question('Your answer: '));
+  const userAnswer = readlineSync.question('Your answer: ');
   return [answer, userAnswer];
 };
 
-gameSession(brainGCD);
+export default gcd;
