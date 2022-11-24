@@ -2,11 +2,7 @@
 import readlineSync from 'readline-sync';
 import random from '../random.js';
 
-console.log('Find the greatest common divisor of given numbers.');
-
-const getMaxDivider = (firstValue, secondValue) => {
-  const maxValue = Math.max(firstValue, secondValue);
-  const minValue = Math.min(firstValue, secondValue);
+const getMaxDivider = (minValue, maxValue) => {
   if (maxValue % minValue === 0) {
     return minValue;
   }
@@ -17,24 +13,32 @@ const getMaxDivider = (firstValue, secondValue) => {
       maxValueDividers.push(i);
     }
   }
+
   maxValueDividers.sort((a, b) => a - b);
-  let maxDiveder;
+  let maxDivider;
   for (let i = Math.ceil(minValue / 2); i > 0; i -= 1) {
     if (minValue % i === 0 && maxValueDividers.includes(i)) {
-      maxDiveder = i;
+      maxDivider = i;
       break;
     }
   }
 
-  return maxDiveder;
+  return maxDivider;
+};
+
+const getValues = () => {
+  const firstValue = random(1, 100);
+  const secondValue = random(1, 100);
+  const maxValue = Math.max(firstValue, secondValue);
+  const minValue = Math.min(firstValue, secondValue);
+  return [minValue, maxValue];
 };
 
 const gcd = () => {
-  const firstValue = random(1, 100);
-  const secondValue = random(1, 100);
-
-  const answer = String(getMaxDivider(firstValue, secondValue));
-  console.log(`Question: ${firstValue} ${secondValue}`);
+  console.log('Find the greatest common divisor of given numbers.');
+  const [minValue, maxValue] = getValues();
+  const answer = String(getMaxDivider(minValue, maxValue));
+  console.log(`Question: ${minValue} ${maxValue}`);
   const userAnswer = readlineSync.question('Your answer: ');
   return [answer, userAnswer];
 };

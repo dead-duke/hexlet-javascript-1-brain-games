@@ -2,9 +2,8 @@
 import readlineSync from 'readline-sync';
 import random from '../random.js';
 
-console.log('What is the result of the expression?');
-
 const calc = () => {
+  console.log('What is the result of the expression?');
   const firstOperand = random(1, 20);
   const secondOperand = random(1, 20);
   const operator = random(1, 3);

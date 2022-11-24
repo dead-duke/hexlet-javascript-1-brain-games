@@ -2,9 +2,8 @@
 import readlineSync from 'readline-sync';
 import random from '../random.js';
 
-console.log('What number is missing in the progression?');
-
 const progression = () => {
+  console.log('What number is missing in the progression?');
   const progressionStartValue = random(1, 20);
   const progressionStep = random(1, 5);
   const progressionLength = random(5, 10);

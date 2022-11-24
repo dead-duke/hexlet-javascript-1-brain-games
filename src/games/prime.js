@@ -2,9 +2,8 @@
 import readlineSync from 'readline-sync';
 import random from '../random.js';
 
-console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
-
 const prime = () => {
+  console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
   const currentNumber = random(1, 100);
   let answer = 'yes';
 
