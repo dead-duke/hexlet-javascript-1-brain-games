@@ -4,28 +4,30 @@ import random from '../random.js';
 
 export const rule = 'Find the greatest common divisor of given numbers.';
 
-const getMaxDivider = (minValue, maxValue) => {
+const getDivisors = (value) => {
+  let divisors = [];
+  for (let currentDivisor = Math.ceil(value / 2); currentDivisor > 1; currentDivisor -= 1) {
+    if (value % currentDivisor === 0) {
+      divisors = [currentDivisor, ...divisors];
+    }
+  }
+  return [1, ...divisors, value];
+};
+
+const getMaxDivisor = (minValue, maxValue) => {
   if (maxValue % minValue === 0) {
     return minValue;
   }
+  const maxValueDivisors = getDivisors(maxValue);
+  const minValueDivisors = getDivisors(minValue);
 
-  const maxValueDividers = [1, maxValue];
-  for (let i = Math.ceil(maxValue / 2); i > 1; i -= 1) {
-    if (maxValue % i === 0) {
-      maxValueDividers.push(i);
+  let maxDivisor;
+  for (let currentDivisor = 0; currentDivisor < minValueDivisors.length; currentDivisor += 1) {
+    if (maxValueDivisors.includes(currentDivisor)) {
+      maxDivisor = currentDivisor;
     }
   }
-
-  maxValueDividers.sort((a, b) => a - b);
-  let maxDivider;
-  for (let i = Math.ceil(minValue / 2); i > 0; i -= 1) {
-    if (minValue % i === 0 && maxValueDividers.includes(i)) {
-      maxDivider = i;
-      break;
-    }
-  }
-
-  return maxDivider;
+  return maxDivisor;
 };
 
 const getValues = () => {
@@ -38,7 +40,7 @@ const getValues = () => {
 
 export const gcd = () => {
   const [minValue, maxValue] = getValues();
-  const answer = String(getMaxDivider(minValue, maxValue));
+  const answer = String(getMaxDivisor(minValue, maxValue));
   console.log(`Question: ${minValue} ${maxValue}`);
   const userAnswer = readlineSync.question('Your answer: ');
   return [answer, userAnswer];
