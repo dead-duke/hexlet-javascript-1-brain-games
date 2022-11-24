@@ -2,8 +2,9 @@
 import readlineSync from 'readline-sync';
 import random from '../random.js';
 
-const progression = () => {
-  console.log('What number is missing in the progression?');
+export const rule = 'What number is missing in the progression?';
+
+export const progression = () => {
   const progressionStartValue = random(1, 20);
   const progressionStep = random(1, 5);
   const progressionLength = random(5, 10);
@@ -26,5 +27,3 @@ const progression = () => {
   const userAnswer = readlineSync.question('Your answer: ');
   return [answer, userAnswer];
 };
-
-export default progression;

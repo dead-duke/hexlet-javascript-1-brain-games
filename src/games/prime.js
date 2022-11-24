@@ -2,8 +2,9 @@
 import readlineSync from 'readline-sync';
 import random from '../random.js';
 
-const prime = () => {
-  console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
+export const rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+
+export const prime = () => {
   const currentNumber = random(1, 100);
   let answer = 'yes';
 
@@ -18,5 +19,3 @@ const prime = () => {
   const userAnswer = readlineSync.question('Your answer: ');
   return [answer, userAnswer];
 };
-
-export default prime;

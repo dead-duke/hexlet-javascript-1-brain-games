@@ -2,6 +2,8 @@
 import readlineSync from 'readline-sync';
 import random from '../random.js';
 
+export const rule = 'Find the greatest common divisor of given numbers.';
+
 const getMaxDivider = (minValue, maxValue) => {
   if (maxValue % minValue === 0) {
     return minValue;
@@ -34,13 +36,10 @@ const getValues = () => {
   return [minValue, maxValue];
 };
 
-const gcd = () => {
-  console.log('Find the greatest common divisor of given numbers.');
+export const gcd = () => {
   const [minValue, maxValue] = getValues();
   const answer = String(getMaxDivider(minValue, maxValue));
   console.log(`Question: ${minValue} ${maxValue}`);
   const userAnswer = readlineSync.question('Your answer: ');
   return [answer, userAnswer];
 };
-
-export default gcd;

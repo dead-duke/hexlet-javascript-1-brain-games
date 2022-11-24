@@ -2,8 +2,9 @@
 import readlineSync from 'readline-sync';
 import random from '../random.js';
 
-const calc = () => {
-  console.log('What is the result of the expression?');
+export const rule = 'What is the result of the expression?';
+
+export const calc = () => {
   const firstOperand = random(1, 20);
   const secondOperand = random(1, 20);
   const operator = random(1, 3);
@@ -27,5 +28,3 @@ const calc = () => {
   const userAnswer = readlineSync.question('Your answer: ');
   return [answer, userAnswer];
 };
-
-export default calc;
