@@ -22,11 +22,15 @@ const getMaxDivisor = (minValue, maxValue) => {
   const minValueDivisors = getDivisors(minValue);
 
   let maxDivisor;
-  for (let currentDivisor = 0; currentDivisor < minValueDivisors.length; currentDivisor += 1) {
+  for (let i = 0; i < minValueDivisors.length; i += 1) {
+    const currentDivisor = minValueDivisors[i];
     if (maxValueDivisors.includes(currentDivisor)) {
       maxDivisor = currentDivisor;
+      console.log(currentDivisor);
     }
   }
+
+  console.log(maxDivisor, minValueDivisors, maxValueDivisors);
   return maxDivisor;
 };
 
