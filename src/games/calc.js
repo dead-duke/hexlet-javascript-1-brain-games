@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
-import random from '../src/random.js';
+import random from '../random.js';
 
 console.log('What is the result of the expression?');
 

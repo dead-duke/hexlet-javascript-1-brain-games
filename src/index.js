@@ -1,10 +1,10 @@
 import answerUserName from './cli.js';
 
-const gameSession = (func) => {
+const gameSession = (game) => {
   const userName = answerUserName();
   const maxTries = 3;
   for (let i = 1; i <= maxTries; i += 1) {
-    const [answer, userAnswer] = func();
+    const [answer, userAnswer] = game();
     if (userAnswer === answer) {
       console.log('Correct!');
       if (i === maxTries) {

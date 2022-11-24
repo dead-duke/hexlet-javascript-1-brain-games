@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
-import random from '../src/random.js';
+import random from '../random.js';
 
 console.log('Find the greatest common divisor of given numbers.');
 

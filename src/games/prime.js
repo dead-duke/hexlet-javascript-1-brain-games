@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
-import random from '../src/random.js';
+import random from '../random.js';
 
 console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
 
