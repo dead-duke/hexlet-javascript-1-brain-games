@@ -26,11 +26,9 @@ const getMaxDivisor = (minValue, maxValue) => {
     const currentDivisor = minValueDivisors[i];
     if (maxValueDivisors.includes(currentDivisor)) {
       maxDivisor = currentDivisor;
-      console.log(currentDivisor);
     }
   }
 
-  console.log(maxDivisor, minValueDivisors, maxValueDivisors);
   return maxDivisor;
 };
 
