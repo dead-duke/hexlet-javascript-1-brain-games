@@ -14,14 +14,12 @@ Console games for one player.
 
 * `make install` install
 * `make <game>` launch game
-
-#### Games list
-
-* brain-even
-* brain-calc
-* brain-gcd
-* brain-progression
-* brain-prime
+  * Games list
+    * brain-even
+    * brain-calc
+    * brain-gcd
+    * brain-progression
+    * brain-prime
 
 ## Gameplay
 
