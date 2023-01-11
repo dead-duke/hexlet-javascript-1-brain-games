@@ -10,7 +10,7 @@ Console games for one player.
 * Node.js
 * Make
 
-## Installation
+## Installation and launch
 
 * `make install` install
 * `make <game>` launch game
