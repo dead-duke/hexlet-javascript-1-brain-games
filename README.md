@@ -8,14 +8,14 @@ Console games for one player.
 ## Requirements
 
 * Node.js
-* make
+* Make
 
 ## Installation
 
 * `make install` install
 * `make <game>` launch game
 
-### Games list
+#### Games list
 
 * brain-even
 * brain-calc
