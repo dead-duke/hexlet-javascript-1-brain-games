@@ -1,11 +1,10 @@
-#!/usr/bin/env node
 import readlineSync from 'readline-sync';
-import random from '../random.js';
+import getRandomNumber from '../random.js';
 
-export const rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+export const primeGameRule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-export const prime = () => {
-  const currentNumber = random(1, 100);
+export const startPrimeGame = () => {
+  const currentNumber = getRandomNumber(1, 100);
   let answer = 'yes';
 
   for (let i = 2; i <= Math.ceil(currentNumber / 2); i += 1) {

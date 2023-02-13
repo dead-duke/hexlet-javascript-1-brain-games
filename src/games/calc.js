@@ -1,13 +1,12 @@
-#!/usr/bin/env node
 import readlineSync from 'readline-sync';
-import random from '../random.js';
+import getRandomNumber from '../random.js';
 
-export const rule = 'What is the result of the expression?';
+export const calcGameRule = 'What is the result of the expression?';
 
-export const calc = () => {
-  const firstOperand = random(1, 20);
-  const secondOperand = random(1, 20);
-  const operator = random(1, 3);
+export const startCalcGame = () => {
+  const firstOperand = getRandomNumber(1, 20);
+  const secondOperand = getRandomNumber(1, 20);
+  const operator = getRandomNumber(1, 3);
   let answer;
   switch (operator) {
     case 1:

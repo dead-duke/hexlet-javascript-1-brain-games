@@ -1,14 +1,13 @@
-#!/usr/bin/env node
 import readlineSync from 'readline-sync';
-import random from '../random.js';
+import getRandomNumber from '../random.js';
 
-export const rule = 'What number is missing in the progression?';
+export const progressionGameRule = 'What number is missing in the progression?';
 
-export const progression = () => {
-  const progressionStartValue = random(1, 20);
-  const progressionStep = random(1, 5);
-  const progressionLength = random(5, 10);
-  const progressionEmptyPlace = random(0, progressionLength);
+export const startProgressionGame = () => {
+  const progressionStartValue = getRandomNumber(1, 20);
+  const progressionStep = getRandomNumber(1, 5);
+  const progressionLength = getRandomNumber(5, 10);
+  const progressionEmptyPlace = getRandomNumber(0, progressionLength);
 
   let answer;
   const progressionList = [];

@@ -1,8 +1,7 @@
-#!/usr/bin/env node
 import readlineSync from 'readline-sync';
-import random from '../random.js';
+import getRandomNumber from '../random.js';
 
-export const rule = 'Find the greatest common divisor of given numbers.';
+export const gcdGameRule = 'Find the greatest common divisor of given numbers.';
 
 const getDivisors = (value) => {
   let divisors = [];
@@ -33,14 +32,14 @@ const getMaxDivisor = (minValue, maxValue) => {
 };
 
 const getValues = () => {
-  const firstValue = random(1, 100);
-  const secondValue = random(1, 100);
+  const firstValue = getRandomNumber(1, 100);
+  const secondValue = getRandomNumber(1, 100);
   const maxValue = Math.max(firstValue, secondValue);
   const minValue = Math.min(firstValue, secondValue);
   return [minValue, maxValue];
 };
 
-export const gcd = () => {
+export const startGcdGame = () => {
   const [minValue, maxValue] = getValues();
   const answer = String(getMaxDivisor(minValue, maxValue));
   console.log(`Question: ${minValue} ${maxValue}`);
