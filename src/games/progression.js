@@ -22,7 +22,7 @@ export const startProgressionGame = () => {
   const length = getRandomNumber(5, 10);
   const emptyIndex = getRandomNumber(0, length);
   const [answer, progression] = getProgression(start, step, length, emptyIndex);
-  const question = `'Question:' ${progression.join(' ')}`;
+  const question = `'Question: ${progression.join(' ')}'`;
   return [question, String(answer)];
 };
 
