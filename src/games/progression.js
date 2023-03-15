@@ -2,7 +2,7 @@ import getRandomNumber from '../random.js';
 
 const getProgression = (start, step, length, emptyIndex) => {
   const iter = (acc, index = 0, answer = null) => {
-    if (acc.length === length) {
+    if (acc.length > length) {
       return [answer, acc];
     }
 
