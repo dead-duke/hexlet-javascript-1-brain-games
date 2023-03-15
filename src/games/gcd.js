@@ -1,48 +1,22 @@
-import readlineSync from 'readline-sync';
 import getRandomNumber from '../random.js';
 
-export const gcdGameRule = 'Find the greatest common divisor of given numbers.';
-
-const getDivisors = (value) => {
-  let divisors = [];
-  for (let currentDivisor = Math.ceil(value / 2); currentDivisor > 1; currentDivisor -= 1) {
-    if (value % currentDivisor === 0) {
-      divisors = [currentDivisor, ...divisors];
+const getGcd = (numb1, numb2) => {
+  const iter = (divisor) => {
+    if (numb1 % divisor === 0 && numb2 % divisor === 0) {
+      return divisor;
     }
-  }
-  return [1, ...divisors, value];
-};
+    return iter(divisor - 1);
+  };
 
-const getMaxDivisor = (minValue, maxValue) => {
-  if (maxValue % minValue === 0) {
-    return minValue;
-  }
-  const maxValueDivisors = getDivisors(maxValue);
-  const minValueDivisors = getDivisors(minValue);
-
-  let maxDivisor;
-  for (let i = 0; i < minValueDivisors.length; i += 1) {
-    const currentDivisor = minValueDivisors[i];
-    if (maxValueDivisors.includes(currentDivisor)) {
-      maxDivisor = currentDivisor;
-    }
-  }
-
-  return maxDivisor;
-};
-
-const getValues = () => {
-  const firstValue = getRandomNumber(1, 100);
-  const secondValue = getRandomNumber(1, 100);
-  const maxValue = Math.max(firstValue, secondValue);
-  const minValue = Math.min(firstValue, secondValue);
-  return [minValue, maxValue];
+  return iter(Math.min(numb1, numb2));
 };
 
 export const startGcdGame = () => {
-  const [minValue, maxValue] = getValues();
-  const answer = String(getMaxDivisor(minValue, maxValue));
-  console.log(`Question: ${minValue} ${maxValue}`);
-  const userAnswer = readlineSync.question('Your answer: ');
-  return [answer, userAnswer];
+  const numb1 = getRandomNumber(1, 100);
+  const numb2 = getRandomNumber(1, 100);
+  const answer = String(getGcd(numb1, numb2));
+  const question = `Question: ${numb1} ${numb2}`;
+  return [question, answer];
 };
+
+export const gcdGameRule = 'Find the greatest common divisor of given numbers.';
