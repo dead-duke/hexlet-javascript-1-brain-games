@@ -1,10 +1,9 @@
 import getRandomNumber from '../random.js';
 
-const isEven = (numb) => numb % 2 === 0;
-
 export const startEvenGame = () => {
   const numb = getRandomNumber(1, 100);
-  const answer = isEven(numb) ? 'yes' : 'no';
+  const isEven = numb % 2 === 0;
+  const answer = isEven ? 'yes' : 'no';
   const question = `Question: ${numb}`;
   return [question, answer];
 };
