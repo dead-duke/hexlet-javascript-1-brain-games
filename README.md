@@ -13,7 +13,7 @@ Console games for one player.
 ## Installation and launch
 
 * `make install` install
-* `make <game>` launch game
+* `<game>` launch game
 * games list
    * brain-even
    * brain-calc
