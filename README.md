@@ -23,8 +23,17 @@ Console games for one player.
 
 ## Gameplay
 
-* Even: https://asciinema.org/a/534703
-* Calc: https://asciinema.org/a/534726
-* GCD: https://asciinema.org/a/534854
-* Progression: https://asciinema.org/a/534902
-* Prime: https://asciinema.org/a/534908
+* Even
+<a href="https://asciinema.org/a/534703" target="_blank"><img src="https://asciinema.org/a/534703.svg" /></a>
+
+* Calc
+<a href="https://asciinema.org/a/534726" target="_blank"><img src="https://asciinema.org/a/534726.svg" /></a>
+
+* GCD
+<a href="https://asciinema.org/a/534854" target="_blank"><img src="https://asciinema.org/a/534854.svg" /></a>
+
+* Progression
+<a href="https://asciinema.org/a/534902" target="_blank"><img src="https://asciinema.org/a/534902.svg" /></a>
+
+* Prime
+<a href="https://asciinema.org/a/534908" target="_blank"><img src="https://asciinema.org/a/534908.svg" /></a>
