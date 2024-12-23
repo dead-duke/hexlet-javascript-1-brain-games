@@ -1,7 +1,7 @@
 # Hexlet: "Brain games"
 
-[![Actions Status](https://github.com/deus-ex-m/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/deus-ex-m/frontend-project-44/actions)
-[![Maintainability](https://api.codeclimate.com/v1/badges/af89e99fe019a33d8f0f/maintainability)](https://codeclimate.com/github/deus-ex-m/frontend-project-44/maintainability)
+[![hexlet-check](https://github.com/grim-vagabond/hexlet-javascript-1-brain-games/actions/workflows/hexlet-check.yml/badge.svg?branch=main)](https://github.com/grim-vagabond/hexlet-javascript-1-brain-games/actions/workflows/hexlet-check.yml)
+[![Maintainability](https://api.codeclimate.com/v1/badges/e4508e2854887d43321e/maintainability)](https://codeclimate.com/github/grim-vagabond/hexlet-javascript-1-brain-games/maintainability)
 
 Console games for one player.
 
@@ -15,21 +15,16 @@ Console games for one player.
 * `make install` install
 * `<game>` launch game
 * games list
-   * brain-even
-   * brain-calc
-   * brain-gcd
-   * brain-progression
-   * brain-prime
+  * brain-even
+  * brain-calc
+  * brain-gcd
+  * brain-progression
+  * brain-prime
 
 ## Gameplay
 
-* Even
-[![asciicast](https://asciinema.org/a/534703.svg)](https://asciinema.org/a/534703)
-* Calc
-[![asciicast](https://asciinema.org/a/534726.svg)](https://asciinema.org/a/534726)
-* GCD
-[![asciicast](https://asciinema.org/a/534854.svg)](https://asciinema.org/a/534854)
-* Progression
-[![asciicast](https://asciinema.org/a/534902.svg)](https://asciinema.org/a/534902)
-* Prime
-[![asciicast](https://asciinema.org/a/534908.svg)](https://asciinema.org/a/534908)
+* [Even](https://asciinema.org/a/534703)
+* [Calc](https://asciinema.org/a/534726)
+* [GCD](https://asciinema.org/a/534854)
+* [Progression](https://asciinema.org/a/534902)
+* [Prime](https://asciinema.org/a/534908)

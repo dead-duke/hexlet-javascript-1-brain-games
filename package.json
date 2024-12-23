@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/deus-ex-m/frontend-project-44.git"
+    "url": "git+https://github.com/grim-vagabond/hexlet-javascript-1-brain-games.git"
   },
   "keywords": [
     "hexlet"
@@ -17,7 +17,7 @@
   "author": "Artem Terenin",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/deus-ex-m/frontend-project-44/issues"
+    "url": "https://github.com/grim-vagabond/hexlet-javascript-1-brain-games/issues"
   },
   "bin": {
     "brain-games": "bin/brain-games.js",
@@ -27,7 +27,7 @@
     "brain-progression": "bin/brain-progression.js",
     "brain-prime": "bin/brain-prime.js"
   },
-  "homepage": "https://github.com/deus-ex-m/frontend-project-44#readme",
+  "homepage": "https://github.com/grim-vagabond/hexlet-javascript-1-brain-games#readme",
   "dependencies": {
     "readline-sync": "^1.4.10"
   },
