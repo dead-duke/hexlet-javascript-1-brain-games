@@ -1,7 +1,10 @@
 # Hexlet: "Brain games"
 
-[![hexlet-check](https://github.com/grim-vagabond/hexlet-javascript-1-brain-games/actions/workflows/hexlet-check.yml/badge.svg?branch=main)](https://github.com/grim-vagabond/hexlet-javascript-1-brain-games/actions/workflows/hexlet-check.yml)
-[![Maintainability](https://api.codeclimate.com/v1/badges/e4508e2854887d43321e/maintainability)](https://codeclimate.com/github/grim-vagabond/hexlet-javascript-1-brain-games/maintainability)
+[![hexlet-check](https://github.com/dead-duke/hexlet-javascript-1-brain-games/actions/workflows/hexlet-check.yml/badge.svg?branch=main)](https://github.com/dead-duke/hexlet-javascript-1-brain-games/actions/workflows/hexlet-check.yml)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=dead-duke_hexlet-javascript-1-brain-games&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=dead-duke_hexlet-javascript-1-brain-games)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=dead-duke_hexlet-javascript-1-brain-games&metric=bugs)](https://sonarcloud.io/summary/new_code?id=dead-duke_hexlet-javascript-1-brain-games)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=dead-duke_hexlet-javascript-1-brain-games&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=dead-duke_hexlet-javascript-1-brain-games)
+[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=dead-duke_hexlet-javascript-1-brain-games&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=dead-duke_hexlet-javascript-1-brain-games)
 
 Console games for one player.
 
